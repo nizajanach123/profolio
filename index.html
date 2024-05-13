@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78047fc9ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="pic/logoPic.jpg"  class="logo">
+            <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#content">content</a></li>
+                <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+           <p> Fullstack Developer</p> 
+           <h1> Hi, I'm <span>Niza Kafri</span><br> web developer</h1>
+        </div>
+    </div>
+   </div>
+<!-- ----------------About Me----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic/workPic5.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Able to work under pressure,<br> with excellent interpersonal skills <br>and teamwork skills.
+                       <br> Willingness to invest in learning new technologies.<br>I'm seeking challenging entry-level positions in technology.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                         <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                         <li><span>Web Developer</span><br>Web app Developer</li>
+                         <li><span>App Developer</span><br>Building Android /iOS app</li>
+                       </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                          <li><span>2022-2023</span><br> Secretary at Subaru <br>	Answering phone calls, providing customer service, receiving payments, and ongoing administrative support.</li> 
+                        </ul>
+                     </div>
+
+                     <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span>2019- 2023</span><br>B.Sc. Computer Science, College of Management<br>Courses: • Object-oriented • Data structure • Database • Algorithms • Communication networks • Operating systems and more.</li>
+                          <li><span>2015-2018</span><br>Full matriculation certificate 11 Unite of Computer Science in High School</li>
+                        </ul>
+                     </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is such an exciting field! </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Web design is such an exciting field! </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Web design is such an exciting field! </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pic/workPic6.jpg" alt="">
+                    <div class="layer">
+                        <h3>Trip-On-Click website </h3>
+                        <p>that plans trips for the user.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="pic/workPic7.jpg" alt="">
+                    <div class="layer">
+                        <h3>Fusion </h3>
+                        <p>'Fusion' restaurant </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="pic/workPic3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Fusion </h3>
+                        <p>'Fusion' restaurant </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------content------------- -->
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nizajanach@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0535439168</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="pic/NIZA JANACH.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contect-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="You Name" required>
+                        <input type="email" name="Email" placeholder="You Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p></p>
+        </div> -->
+    </div>
+    
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>  
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+         sidemenu.style.right="0";
+    }
+    function closemenu()
+    {
+         sidemenu.style.right="-200px";
+    }
+  </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzOZVOrghR28-NOZLsT7TiEXwiZ7uAzpspB_DRBbEiIbnZ9V_ONFckj4on7UhuL7lGe/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message send succefully"
+             setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
