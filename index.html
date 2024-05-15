@@ -6,6 +6,8 @@
     <title>personal portfolio website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/78047fc9ff.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
    <div id="header">
@@ -49,9 +51,9 @@
 
                     <div class="tab-contents active-tab" id="skills">
                        <ul>
-                         <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                         <li><span>Web Developer</span><br>Web app Developer</li>
-                         <li><span>App Developer</span><br>Building Android /iOS app</li>
+                         <li><span>Programming languages</span><br>C, C++,Java<br> JavaScript, React, Html, CSS <br>SQL </li>
+                         <li><span>Knowledge of technologies </span><br>Node+Express <br>React-js <br> MongoDB</li>
+                         <li><span>Language</span><br>Hebrew - native language<br>Hebrew - native language</li>
                        </ul>
                     </div>
 
@@ -160,15 +162,23 @@
                         <input type="text" name="Name" placeholder="You Name" required>
                         <input type="email" name="Email" placeholder="You Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
+                        <button type="submit" class="btn btn2">   <a href="whatsapp://send?text=hi" 
+                            data-action="share/whatsapp/share">
+                            Share via WhatsApp
+                         </a></button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
+        <!-- <h3 style="color:brown"> WhatsApp sharing Link </h3>   
+    create a link using anchor tab -->  
+    <!-- <a href="whatsapp://send?tex=This is WhatsApp sharing example using link"       data-action="share/whatsapp/share"  
+        target="_blank"> Share to WhatsApp </a>    -->
         <!-- <div class="copyright">
             <p></p>
         </div> -->
+     
     </div>
     
 
